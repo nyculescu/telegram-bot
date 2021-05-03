@@ -60,4 +60,6 @@ dispatcher.add_handler(CommandHandler("eth", eth_price))
 
 dispatcher.add_handler(MessageHandler(Filters.text & (~Filters.command), echo))
 
+print("bot started")
+
 updater.start_polling()
